@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+body {
+background-image: url(skeletons.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  font-size: 100%;
+  font-family: "BBH Bogle", sans-serif;
+  background-color: rgb(0, 0, 0);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #000000b0;
+}
+.topnav ul{
+  display: flex;
+  justify-content: center;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px;
+  text-decoration: none;
+  font-size: 25px;
+}
+.topnav img{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {#main {margin-left: 0}} 
+
+#myDIV {
+  border: 15px solid transparent;
+  padding: 5px;
+  border-image-source:url('bone.png');  
+  border-image-repeat: repeat;
+  border-image-slice: 70;
+  border-image-width: 20px;
+  border-image-outset: 25px;
+  }
+img {
+  vertical-align: middle;
+}
+.container {
+    color: white;
+max-width:  900px;
+margin: 32px auto;
+background-color: #000000;
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position:absolute;
+  top: 70%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position:relative;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #000000;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+  background-color: #000000b0;
+   color: white;
+   text-align: center;
+}

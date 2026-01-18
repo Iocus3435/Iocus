@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+body {
+background-image: url(skeletons.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  font-size: 100%;
+  font-family: "BBH Bogle", sans-serif;
+  background-color: rgb(0, 0, 0);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #000000b0;
+}
+.topnav ul{
+  display: flex;
+  justify-content: center;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px;
+  text-decoration: none;
+  font-size: 25px;
+}
+.topnav img{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {#main {margin-left: 0}} 
+
+#myDIV {
+  border: 15px solid transparent;
+  padding: 5px;
+  border-image-source:url('bone.png');  
+  border-image-repeat: repeat;
+  border-image-slice: 70;
+    border-image-width: 20px;
+  border-image-outset: 25px;
+  }
+.yt-video{
+  text-align: center;
+}  
+.video{
+    background-color: black;
+  width: 50% !important;
+  height: 450px;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+  background-color: #000000b0;
+   color: white;
+   text-align: center;
+}

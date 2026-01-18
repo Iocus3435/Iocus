@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+body {
+background-image: url(skeletons.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  font-size: 100%;
+  font-family: "BBH Bogle", sans-serif;
+  background-color: rgb(0, 0, 0);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #000000b0;
+}
+.topnav ul{
+  display: flex;
+  justify-content: center;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px;
+  text-decoration: none;
+  font-size: 25px;
+}
+.topnav img{
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+#myDIV {
+  border: 15px solid transparent;
+  padding: 5px;
+  border-image-source:url('bone.png');  
+  border-image-repeat: repeat;
+  border-image-slice: 70;
+  border-image-width: 20px;
+  border-image-outset: 25px;
+  }
+.item {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: left;
+    margin: auto;
+         font-family: "Share Tech", sans-serif;
+    width: 50%;
+}
+.item h1{
+    text-decoration: 5px underline;
+    color: #ffffff;
+}
+
+.item div{
+    color: #f2f2f2;
+  font-size: 25px;
+}
+
+.item a{
+    color: #f2f2f2;
+    justify-content: space-between;
+  font-size: 20px;
+    word-wrap: break-word
+}
+
+.container {
+color: white;
+text-align: center;
+height: 450px;
+margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+  background-color: #000000b0;
+     color: white;
+   text-align: center;
+}

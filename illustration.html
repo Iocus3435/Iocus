@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asimovian&family=BBH+Bogle&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="illustration.css">
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+      <ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><img src="skull.png" alt="skull" style="height: 100px;"></li>
+  <li><a href="porfolio.html">Portfolio</a></li>
+  <li><a href="contact.html">Contact</a></li>
+      </ul>
+ </div>
+
+<div class="container" id="myDIV">
+  <h2>"Before the storm"- project 2025</h2>
+     <img src="IMG_20250818_160918_309.jpg" style="width: 100%;">
+    <h2>Invasion on Mariupol 2022</h2>
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="illust_web/Знімок екрана 2024-10-11 093221.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="illust_web/Знімок екрана 2024-10-11 093237.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="illust_web/Знімок екрана 2024-10-11 093254.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="illust_web/Знімок екрана 2024-10-11 093148.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="illust_web/Знімок екрана 2024-10-11 093205.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="illust_web/Знімок екрана 2024-10-11 093315.png" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="illust_web/Знімок екрана 2024-10-11 093148.png" style="width:100%" onclick="currentSlide(1)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="illust_web/Знімок екрана 2024-10-11 093205.png" style="width:100%" onclick="currentSlide(2)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="illust_web/Знімок екрана 2024-10-11 093221.png" style="width:100%" onclick="currentSlide(3)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="illust_web/Знімок екрана 2024-10-11 093237.png" style="width:100%" onclick="currentSlide(4)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="illust_web/Знімок екрана 2024-10-11 093254.png" style="width:100%" onclick="currentSlide(5)" >
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="illust_web/Знімок екрана 2024-10-11 093315.png" style="width:100%" onclick="currentSlide(6)" >
+    </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<div class="footer">
+    <p>©Io_cus 2025</p>
+</div>
+</body>
+</html>
