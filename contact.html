@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+        <link rel="icon" type="logo" href="a5d1705dbc9dafe56c5054c445c96a46.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asimovian&family=BBH+Bogle&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="contact.css">
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+   <img src="logo1.png" class="logo1" alt="logo1" style="height: 125px;"/>
+  <a href="about.html" class="active">About</a>
+  <a href="contact.html">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Portfolio 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="illustration.html">Illustration</a>
+      <a href="#">Character Design</a>
+      <a href="#">Visual development</a>
+      <a href="aniamtion.html">Animation</a>
+    </div>
+  </div> 
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+  <div class="demo-wrap">
+    <div class="demo-content">
+      <div class="container">
+<div class="contact" id="myDIV">
+  <div style="text-align:center">
+    <h2>Contact me</h2>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="images/contact.png" style="width:70%">
+    </div>
+    <div class="column">
+     <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="89c40c20-cba6-4347-967f-798a2f033639">
+        <label for="fname">First and Last Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email..">
+        <label for="subject">Message</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<div class="footer">
+    <p>©Io_cus 2025</p>
+</div>
+</body>
+</html>
+</html>

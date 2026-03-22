@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+  font-family: "BBH Bogle", sans-serif;
+  background-color: rgb(68, 68, 68);
+}
+
+.item {
+    color: #ffffff;
+     font-family: "Share Tech", sans-serif;
+    text-align: center;
+  max-width: 500px;
+  margin: auto;
+}
+.container {
+color: white;
+text-align: center;
+height: 550px;
+margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
