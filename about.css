@@ -128,9 +128,9 @@ margin: auto;
   justify-content: center;
 }
 .images {
- left: calc(8.3% *  8.4);
+ left: calc(8.3% *  8.3);
   position:absolute;
-  top: 71%;
+  top: 68%;
   width: 15%;
   transform: translate(12%, -50%);
 }
@@ -145,10 +145,10 @@ border-radius: 50%;
     color: #ffffff;
      font-family: "Share Tech", sans-serif;
     text-align: left;
-  max-width: 765px;
+  max-width: 745px;
   margin: auto;
   padding: 15px;
-    font-size: 25px;
+    font-size: 20px;
 }
 .item h1{
   font-size: 30px;
