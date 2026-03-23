@@ -1,7 +1,14 @@
 * {
   box-sizing: border-box;
 }
-
+ button{
+    font-family: "BBH Bogle", sans-serif;
+    font-size: 30px;
+    float: right;
+    height: 55px;
+  background-color: #3d3d3d;
+  color: #f9f9f9;
+ }
 body {
     font-size: 100%;
   font-family: "BBH Bogle", sans-serif;
